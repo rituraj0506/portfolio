@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b23e25e665.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header"> 
+    <div class="container">  <!--for navbar-->
+    <nav>  <!--for nav-->
+     <img src="logo1.png" class="logo">
+        <ul id="sidemenu"> <!--ul id=sidemenu-->
+        <li ><a href="#header">Home</a></li> <!--ahref for clickable link-->
+        <li ><a href="#about">About</a></li> 
+        <li ><a href="#services">SKills</a></li> 
+        <li ><a href="#portfolio">Project</a></li> 
+        <li ><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+     </ul>
+     <!--Menu icon for phone-->
+     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <div class="header-text">
+   <p>Hi,my name is Rituraj kumar</p>
+   <!--<h1>Hi,i'm <span class="auto-type">Rituraj kumar<br> From India</span> </h1>-->
+   <h1>i'm <span class="auto-type"></span></h1>
+    </div>
+    </div>
+   </div>
+
+
+   <!---about-->
+   <div id="about">
+    <div class="container">
+        <div class="row"><!--create two col-->
+        <div class="about-col-1"> <!--left col add image-->
+         <img src="passportimg.jpg">
+        </div> 
+        <div class="about-col-2"><!--right col add some text-->
+            <h1 class="sub-tittle">About Me</h1>
+            <p>I am Rituraj kumar i am Pursing Btech in computer Science From Graphic Era Deemed University</p>
+            <!--Add three tab all tab have diff content----->
+
+            <div class="tab-tittles">
+             <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+             <p class="tab-links"onclick="opentab('experience')">Experience</p>
+             <p class="tab-links" onclick="opentab('education')">Education</p>
+
+            </div>
+            <!--add tab contents-->
+            <div class="tab-contents active-tab" id="skills" > <!---skill ke just niche jo class hoga uss div ke baad wo uske niche aayega-->
+                <!--open tab me skills so we add id=skills-->
+                <ul>
+                    <li><span>Programming Language</span><br>C++,C,Javascript</li>
+                    <li><span>Web-Devlopment</span><br>Html,Css,Javascript,ReactJs,NodeJs<br>ExpressJs,MongoDb</li>
+                    <li><span>Data Structure and Algorithm</span><br>Basic and Advance DSA</li>
+                </ul> 
+            </div>
+            <div class="tab-contents" id="experience"> <!---skill ke just niche jo class hoga uss div ke baad wo uske niche aayega-->
+                <ul><li><span>2022</span><br>Crafted a dynamic Image Search Engine with Unsplash API integration for real-time image retrieval. Implemented a
+                user-friendly interface, complemented by a "Show More" feature, enhancing the overall search experience.</li>
+                    <li><span>2022</span><br>Developed a feature-rich E-commerce website with a unique product visualization feature. Implemented a
+                    product zoom function for an in-depth view, allowing users to click on a product to expand a small image to full size</li>
+                    <li><span>2023</span><br>Designed and developed a dynamic Restaurant Website, featuring a robust admin section that empowers
+                    administrators to seamlessly add and manage new food items within specific sections of the website.</li>
+                    <li><span>2024</span><br>Designed and developed a user-friendly Travel booking website enabling users to easily book accommodations.
+                    Implemented features for browsing and booking places</li>
+                </ul> 
+            </div>
+            <div class="tab-contents" id="education"> <!---skill ke just niche jo class hoga uss div ke baad wo uske niche aayega-->
+                <ul>
+                    <li><span>2017</span><br>completed 10th(83%) from SPS high School,Begusarai,Bihar,India</li>
+                    <li><span>2019</span><br>completed 12th(79%) from M.R.j.d.i.College,Begusarai,Bihar,India</li>
+                    <li><span>2020-2024</span><br>Pursuing Btech(cse) Graphic Era Deemed University</li>
+                </ul> 
+            </div>
+        </div> 
+        </div>
+    </div>
+   </div>
+
+
+   <!--SKILLs-->
+   <div id="services">
+  <div class="container">
+  <h1 class="sub-tittle">MY-SKills</h1>
+  <div class="services-list"> <!--now we add any div in services list displaying as grid-->
+   <div>
+    <i class="fa-solid fa-code"></i> <!--display the first service copy from fontawesome-->
+    <h2>Programmming Language</h2>
+    <p>C++,C,Javascript</p>
+   </div>
+  
+   <div>
+    <i class="fa-brands fa-app-store"></i>
+    <h2>Data Structure and Algorithm</h2>
+    <p>Knowledge about basic and advance Datastructure and Algorithm</p>
+        <a href="https://leetcode.com/riturajkumar7256/">learn more</a>
+   </div>
+   
+   <div>
+    <i class="fa-solid fa-crop"></i>
+    <h2>WebDevlopment</h2>
+    <p>Html,Css,Javascript,ReactJs,<br>NodeJs,ExpressJs,MongoDb</p>
+        <a href="https://github.com/rituraj0506">learn more</a>
+   </div>
+  </div>
+    </div>
+   </div>
+
+<!--portfolio-->
+ <div id="portfolio">
+    <div class="container">
+ <h1 class="sub-tittle">MY-Project</h1>
+ <!--Grid layout for display work-->
+ <div class="work-list">
+<div class="work">
+    <img src="work-2.png" alt="">
+    <div class="layer">
+        <h3>Restaurant Website, featuring a robust admin section that empowers administrators
+            to seamlessly add and manage new food items</h3>
+        <p>Technology Used: <br>
+            Frontend: ReactJs <br>
+            Backend: Firebase</p>
+        <a href="https://food-delivery-app-nine-woad.vercel.app/"><i
+                class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+</div>
+
+    <div class="work">
+        <img src="work-3.png" alt="">
+        <div class="layer">
+            <h3>Travel booking website enabling users to easily book accommodations. Implemented features for
+                browsing and booking places</h3>
+            <p>Technology Used:<br>
+                Frontend: React js<br>
+                Backend: Express.js with Node.js <br>
+                Database: MongoDB </p>
+            <a href="https://github.com/rituraj0506/TripNest-TravelsBooking-Website"><i
+                    class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        </div>
+
+    <div class="work">
+        <img src="work-2.png" alt="">
+        <div class="layer">
+            <h3>Image Search Engine with Unsplash API integration for real-time image retrieval.</h3>
+            <a href="https://image-search-engine-iota.vercel.app/"><i
+                    class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+ </div>
+ <!---Decorate button-->
+ <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+
+
+ <!---contact section-->
+
+ <div id="contact">
+    <div class="container">
+        <!--in this section we add two col first social media link and in second add contact form--> 
+     <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-tittle">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>riturajkumar7256@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>6202339633</p>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/_rituraj_kumar/"><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/rituraj-kumar-b8b302224/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <!--add button for cv-->
+            <a href="my-cv (2).pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <!--in this section create form-->
+            <form action="https://formsubmit.co/47ee45c60d8073f9c47f83d33954ffa0" method="POST">
+             <input type="text"  name="Name" placeholder="Yourname" required>
+            
+              <input type="email"  name="Email" placeholder="Youremail" required>
+              <textarea name="Message"  placeholder="Your message"></textarea>
+             <button onclick="send()" type="submit" class="btn btn2">Submit</button>
+            </fo>
+            <!--After sumbit form display submit sucessfully-->
+            <span id="msg"></span>
+        </div>
+     </div>
+    </div>
+    <!--Copyright section in bottom-->
+    <div class="copyright">
+        <p>copyright @website made by <i class="fa-solid fa-heart"></i> Rituraj</p>
+    </div>
+ </div>
+
+
+   <!--add js--- for skill js --> 
+   <script> 
+   var tablinks=document.getElementsByClassName("tab-links");
+   var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){ /*define fun open tab it recive tab name*/
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link"); /*if i click on any tab it hide all things of that*/
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab"); /*if i click on any tab it hide all things of that*/
+        }
+       event.currentTarget.classList.add("active-link");// display active color
+       document.getElementById(tabname).classList.add("active-tab"); // it will display what is in particular section
+    }
+   
+   </script>
+
+<!--add js for for menu in small device-->
+<script>
+  
+  var sidemeu= document.getElementById("sidemenu");
+  function openmenu() /*when we click on menu icon define function open menu*/
+  {
+    sidemeu.style.right="0";
+  }
+
+  function closemenu() /*when we click on menu icon define function open menu*/
+  {
+    sidemeu.style.right="-200px";
+  }
+</script>
+
+
+<!--for google form-->
+<script>
+   function send()
+   {
+    alert("Please Wait....");
+   }
+</script>
+
+  
+  
+<!--animation in name-->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+var typed=new Typed(".auto-type",{
+    strings:["problem solver","mern-stack developer"],/*word dispalay in tittle*/
+    typeSpeed:50,
+    backSpeed:200,
+    loop:true
+})
+</script>
+
+</body>
+</html>
+
+
